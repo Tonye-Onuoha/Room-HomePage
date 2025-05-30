@@ -12,12 +12,13 @@ body {
 }
 
 h1,
+h2,
 p {
   margin: 0;
 }
 
 header {
-  height: 360px;
+  height: 400px;
 }
 header .mobile-header {
   position: relative;
@@ -52,9 +53,16 @@ header .mobile-header .angle__container img[alt="right-angle icon"] {
   padding-right: 25px;
 }
 
+.container__component:nth-child(1) {
+  display: none;
+}
+
 .container__component:nth-child(2) {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.container__component:nth-child(2) h1 {
+  font-size: 40px;
 }
 .container__component:nth-child(2) p {
   margin-top: 20px;
@@ -70,6 +78,9 @@ header .mobile-header .angle__container img[alt="right-angle icon"] {
   text-transform: uppercase;
   letter-spacing: 10px;
 }
+.container__component:nth-child(2) .angle__container {
+  display: none;
+}
 
 .container__component:nth-child(3) {
   height: 266px;
@@ -82,6 +93,9 @@ header .mobile-header .angle__container img[alt="right-angle icon"] {
 .container__component:nth-child(4) {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.container__component:nth-child(4) h2 {
+  text-transform: uppercase;
 }
 .container__component:nth-child(4) p {
   margin-top: 20px;
@@ -129,6 +143,112 @@ header .mobile-header .angle__container img[alt="right-angle icon"] {
 
 footer {
   padding: 25px;
+}
+
+@media screen and (min-width: 530px) {
+  header .mobile-header {
+    background-image: url(../images/desktop-image-hero-1.jpg);
+  }
+  .container__component:nth-child(3),
+  .container__component:nth-child(5) {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  header {
+    display: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "component-1 component-1 component-1 component-1 component-1 component-1 component-2 component-2 component-2 component-2" "component-3 component-3 component-3 component-4 component-4 component-4 component-4 component-5 component-5 component-5";
+  }
+  .container__component:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    padding: 55px 50px 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    background-image: url(../images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 60px;
+    grid-area: component-1;
+  }
+  .container__component:nth-child(1) ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+  }
+  .container__component:nth-child(1) ul a {
+    text-transform: lowercase;
+    color: hsl(0, 100%, 100%);
+    padding: 10px 0;
+  }
+  .container__component:nth-child(1) ul li:hover a {
+    cursor: pointer;
+  }
+  .container__component:nth-child(1) ul li:hover hr {
+    opacity: 1;
+  }
+  .container__component:nth-child(1) ul hr {
+    height: 2px;
+    border: none;
+    background-color: hsl(0, 100%, 100%);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .container__component:nth-child(2) {
+    position: relative;
+    padding: 65px 60px 115px 60px;
+    grid-area: component-2;
+  }
+  .container__component:nth-child(2) .shop-now-container span:hover {
+    cursor: pointer;
+  }
+  .container__component:nth-child(2) .angle__container {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .container__component:nth-child(2) .angle__container img[alt="left-angle icon"],
+  .container__component:nth-child(2) .angle__container img[alt="right-angle icon"] {
+    padding: 21.5px;
+    background-color: hsl(0, 0%, 0%);
+  }
+  .container__component:nth-child(2) .angle__container img[alt="left-angle icon"]:hover,
+  .container__component:nth-child(2) .angle__container img[alt="right-angle icon"]:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 27%);
+  }
+  .container__component:nth-child(3) {
+    grid-area: component-3;
+    padding: 0;
+  }
+  .container__component:nth-child(4) {
+    grid-area: component-4;
+    padding: 85px 60px;
+  }
+  .container__component:nth-child(5) {
+    grid-area: component-5;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1430px) {
+  .container__component:nth-child(2) {
+    padding: 110px 105px 160px 105px;
+  }
+  .container__component:nth-child(2) .angle__container img[alt="left-angle icon"],
+  .container__component:nth-child(2) .angle__container img[alt="right-angle icon"] {
+    padding: 32.5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

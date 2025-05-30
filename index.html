@@ -2,16 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <title>Frontend Mentor | Room homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        font-family: "League Spartan", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
         font-size: 11px;
         text-align: center;
       }
@@ -24,24 +32,38 @@
     <header>
       <div class="mobile-header">
         <div class="header__container">
-          <img src="#" alt="website logo" />
+          <img src="images/icon-hamburger.svg" alt="hamburger-menu icon" />
+          <img src="images/logo.svg" alt="website logo" />
+          <img src="images/icon-hamburger.svg" alt="hamburger-menu icon" style="visibility: hidden" />
         </div>
         <div class="angle__container">
-          <img src="#" alt="left-angle icon" />
-          <img src="#" alt="right-angle icon" />
+          <img src="images/icon-angle-left.svg" alt="left-angle icon" />
+          <img src="images/icon-angle-right.svg" alt="right-angle icon" />
         </div>
       </div>
     </header>
     <main>
       <div class="container">
-        <div class="container__component" style="display: none">
-          <img src="#" alt="website logo" />
+        <div class="container__component">
+          <img src="images/logo.svg" alt="website logo" />
           <nav>
             <ul role="menu">
-              <li><a>Home</a></li>
-              <li><a>Shop</a></li>
-              <li><a>About</a></li>
-              <li><a>Contact</a></li>
+              <li>
+                <a>Home</a>
+                <hr style="width: 20px" />
+              </li>
+              <li>
+                <a>Shop</a>
+                <hr style="width: 20px" />
+              </li>
+              <li>
+                <a>About</a>
+                <hr style="width: 20px" />
+              </li>
+              <li>
+                <a>Contact</a>
+                <hr style="width: 20px" />
+              </li>
             </ul>
           </nav>
         </div>
@@ -52,16 +74,18 @@
             form and function in bringing your vision to life. Create a room in your own style with our collection and
             make your property a reflection of you and what you love.
           </p>
-          <span>Shop now</span>
-          <img src="#" alt="arrow icon" />
+          <div class="shop-now-container">
+            <span>Shop now</span>
+            <img src="images/icon-arrow.svg" alt="arrow icon" />
+          </div>
           <div class="angle__container">
-            <img src="#" alt="left-angle icon" />
-            <img src="#" alt="right-angle icon" />
+            <img src="images/icon-angle-left.svg" alt="left-angle icon" />
+            <img src="images/icon-angle-right.svg" alt="right-angle icon" />
           </div>
         </div>
         <div class="container__component background__image"></div>
         <div class="container__component">
-          <h1>About our furniture</h1>
+          <h2>About our furniture</h2>
           <p>
             Our multifunctional collection blends design and function to suit your individual taste. Make each room
             unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture
@@ -74,7 +98,7 @@
       <!-- MOBILE NAVIGATION -->
       <div class="mobile-overlay"></div>
       <div class="mobile-menu" role="navigation">
-        <img src="#" alt="close-menu icon" role="button" />
+        <img src="images/icon-close.svg" alt="close-menu icon" role="button" />
         <nav class="mobile-navigation">
           <ul role="menu">
             <li><a>Home</a></li>
