@@ -1,0 +1,134 @@
+.league-spartan-font, body {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-size: 1em;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+header {
+  height: 360px;
+}
+header .mobile-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 35px 25px 0 25px;
+  box-sizing: border-box;
+  background-image: url(../images/mobile-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header .mobile-header .header__container {
+  display: flex;
+  justify-content: space-between;
+}
+header .mobile-header .angle__container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+header .mobile-header .angle__container img[alt="left-angle icon"],
+header .mobile-header .angle__container img[alt="right-angle icon"] {
+  padding: 12.5px;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.container__component {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.container__component:nth-child(2) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container__component:nth-child(2) p {
+  margin-top: 20px;
+  color: hsl(0, 0%, 63%);
+}
+.container__component:nth-child(2) .shop-now-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.container__component:nth-child(2) .shop-now-container span {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.container__component:nth-child(3) {
+  height: 266px;
+  background-image: url(../images/image-about-dark.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container__component:nth-child(4) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.container__component:nth-child(4) p {
+  margin-top: 20px;
+  color: hsl(0, 0%, 63%);
+}
+
+.container__component:nth-child(5) {
+  height: 266px;
+  background-image: url(../images/image-about-light.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile-overlay {
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background-color: hsl(0, 0%, 63%);
+  opacity: 0.3;
+}
+
+.mobile-menu {
+  display: none;
+  width: 100%;
+  padding: 50px 25px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  justify-content: space-between;
+  background-color: hsl(0, 100%, 100%);
+}
+.mobile-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+.mobile-menu ul a {
+  text-transform: lowercase;
+}
+
+footer {
+  padding: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */
