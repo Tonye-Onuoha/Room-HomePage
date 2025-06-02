@@ -136,4 +136,4 @@ shopButton.addEventListener("mouseover", shopMouseOver);
 
 shopButton.addEventListener("mouseout", shopMouseOut);
 
-document.addEventListener("DOMContentLoaded", () => setInterval(backgroundChanger, 4000));
+document.addEventListener("DOMContentLoaded", () => setInterval(backgroundChanger, 5000));
