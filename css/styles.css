@@ -18,7 +18,7 @@ p {
 }
 
 header {
-  height: 400px;
+  height: 80vw;
 }
 header .mobile-header {
   position: relative;
@@ -83,7 +83,7 @@ header .mobile-header .angle__container img[alt="right-angle icon"] {
 }
 
 .container__component:nth-child(3) {
-  height: 266px;
+  height: 64.57vw;
   background-image: url(../images/image-about-dark.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -103,7 +103,7 @@ header .mobile-header .angle__container img[alt="right-angle icon"] {
 }
 
 .container__component:nth-child(5) {
-  height: 266px;
+  height: 64.57vw;
   background-image: url(../images/image-about-light.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -113,11 +113,11 @@ header .mobile-header .angle__container img[alt="right-angle icon"] {
 .mobile-overlay {
   display: none;
   width: 100%;
-  position: absolute;
   height: 100%;
+  position: absolute;
   top: 0;
-  background-color: hsl(0, 0%, 63%);
   opacity: 0.3;
+  background-color: hsl(0, 0%, 63%);
 }
 
 .mobile-menu {
@@ -145,15 +145,6 @@ footer {
   padding: 25px;
 }
 
-@media screen and (min-width: 530px) {
-  header .mobile-header {
-    background-image: url(../images/desktop-image-hero-1.jpg);
-  }
-  .container__component:nth-child(3),
-  .container__component:nth-child(5) {
-    height: 400px;
-  }
-}
 @media screen and (min-width: 1150px) {
   header {
     display: none;
@@ -208,15 +199,15 @@ footer {
     padding: 65px 60px 115px 60px;
     grid-area: component-2;
   }
-  .container__component:nth-child(2) .shop-now-container span:hover {
-    cursor: pointer;
-  }
   .container__component:nth-child(2) .angle__container {
     display: flex;
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+  .container__component:nth-child(2) .angle__container button {
+    height: 67px;
   }
   .container__component:nth-child(2) .angle__container img[alt="left-angle icon"],
   .container__component:nth-child(2) .angle__container img[alt="right-angle icon"] {
@@ -229,6 +220,7 @@ footer {
     background-color: hsl(0, 0%, 27%);
   }
   .container__component:nth-child(3) {
+    height: 400px;
     grid-area: component-3;
     padding: 0;
   }
@@ -237,6 +229,7 @@ footer {
     padding: 85px 60px;
   }
   .container__component:nth-child(5) {
+    height: 400px;
     grid-area: component-5;
     padding: 0;
   }
@@ -244,6 +237,9 @@ footer {
 @media screen and (min-width: 1430px) {
   .container__component:nth-child(2) {
     padding: 110px 105px 160px 105px;
+  }
+  .container__component:nth-child(2) .angle__container button {
+    height: 89px;
   }
   .container__component:nth-child(2) .angle__container img[alt="left-angle icon"],
   .container__component:nth-child(2) .angle__container img[alt="right-angle icon"] {
