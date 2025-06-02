@@ -46,7 +46,7 @@
       <div class="container">
         <div class="container__component">
           <img src="images/logo.svg" alt="website logo" />
-          <nav>
+          <nav aria-label="Primary">
             <ul>
               <li>
                 <a>Home</a>
@@ -79,11 +79,11 @@
             <img src="images/icon-arrow.svg" alt="arrow icon" />
           </div>
           <div class="angle__container">
-            <button style="border: none; padding: 0">
+            <button type="button" style="border: none; padding: 0">
               <img src="images/icon-angle-left.svg" alt="left-angle icon" />
             </button>
 
-            <button style="border: none; padding: 0">
+            <button type="button" style="border: none; padding: 0">
               <img src="images/icon-angle-right.svg" alt="right-angle icon" />
             </button>
           </div>
@@ -102,9 +102,9 @@
       </div>
       <!-- MOBILE NAVIGATION -->
       <div class="mobile-overlay"></div>
-      <div class="mobile-menu" role="navigation">
+      <div class="mobile-menu">
         <img src="images/icon-close.svg" alt="menu-close icon" role="button" />
-        <nav class="mobile-navigation">
+        <nav class="mobile-navigation" aria-label="Secondary">
           <ul role="menu">
             <li><a>Home</a></li>
             <li><a>Shop</a></li>
